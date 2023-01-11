@@ -35,6 +35,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 80px;
 }
 body::before{
     content: "";
@@ -118,21 +119,87 @@ body::before{
     flex-direction: column;
     gap: 10px;
     padding: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.content__message{
+    padding: 7px;
+    max-width: 63%;
+    font-size: 0.55rem;
+}
+.content__message--left{
+    background-color: var(--grayish-blue);
+    color: var(--moderate-violet);
+    border-radius: 10px 10px 10px 3px;
+    margin-top: 10px;
+}
+.content__photos{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+}
+.content__photo{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+}
+.content__message--right{
+    background-color: var(--white);
+    color: var(--desaturated-dark-violet);
+    border-radius: 10px 10px 3px 10px;
+    align-self: flex-end;
+}
+.prices{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.prices__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75%;
+    padding: 15px;
+    background: linear-gradient(to left, var(--light--violet), var(--light-magenta));
+    border-radius: 10px 10px 10px 3px;
+}
+.prices__paragraph{
+    color: var(--white);
+    font-size: 0.55rem;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.prices__paragraph::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+    display: inline-block;
+}
+.prices__paragraph--number{
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--white);
 }
 .input-wrapper {
     position: relative;
     width: 100%;
+    margin-top: 10px;
  }
  .input__content{
     width: 100%;
-    padding: 14px;
+    padding: 14px 0 14px 25px;
     border-radius: 50px;
-    background-color: blueviolet;
+    background-color: var(--white);
     border: none;
  }
  .input__content::placeholder{
-    color: #fff;
-    font-weight: 30px;
+    color: var(--grayish-blue);
  }
  .input__icon {
     display: flex;
@@ -145,5 +212,5 @@ body::before{
     font-size: 30px;
  }
 .input__icon::before{
-    color: #fff;
+    color: var(--very-dark-desaturated-violet);
 }

@@ -9,7 +9,7 @@
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -32,36 +32,46 @@
       
     </header>
     <section class="content">
-      <p class="content__message"></p>
-      <p class="content__message"></p>
+      <p class="content__message content__message--left">
+        That sounds great. I'd be happy to discuss more.
+      </p>
+      <p class="content__message content__message--left">
+        Could you send over some pictures of your dog, please?
+      </p>
       <div class="content__photos">
         <img src="images/dog-image-1.jpg" alt="Foto de perro" class="content__photo">
         <img src="images/dog-image-2.jpg" alt="Foto de perro" class="content__photo">
         <img src="images/dog-image-3.jpg" alt="Foto de perro" class="content__photo">
       </div>
-      <p class="content__message"></p>
-      <p class="content__message"></p>
-      <p class="content__message"></p>
+      <p class="content__message content__message--right">
+        Here are a few pictures. She's a happy girl!
+      </p>
+      <p class="content__message content__message--right">
+        Can you make it?
+      </p>
+      <p class="content__message content__message--left">
+        She looks so happy! The time we discussed works. How long shall I take her out for?
+      </p>
       <div class="prices">
         <div class="prices__item">
           <p class="prices__paragraph">30 minute walk</p>
-          <p class="prices__paragraph">$29</p>
+          <p class="prices__paragraph--number">$29</p>
         </div>
         <div class="prices__item">
           <p class="prices__paragraph">1 hour walk</p>
-          <p class="prices__paragraph">$49</p>
+          <p class="prices__paragraph--number">$49</p>
         </div>
       </div>
       <div class="input-wrapper">
-        <input type="text" class="input__content" placeholder="Type a message" />
+        <input type="text" class="input__content" placeholder="Type a message..." />
         <span class="icon-chevron-circle-right input__icon"></span>
      </div>
     </section>
   </div>
 
   <article>
-    <h1>Simple booking</h1>
-    <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+    <h1 class="article__title">Simple booking</h1>
+    <p class="article__paragraph">Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
   </article>
 
   <footer class="footer">
