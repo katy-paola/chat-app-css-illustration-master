@@ -250,3 +250,48 @@ body::before{
 .footer-paragraph__link{
     color: inherit;
 }
+
+@media screen and (min-width: 1440px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        min-height: 100vh;
+        justify-items: end;
+        row-gap: 0;
+    }
+    body::before{
+        left: -10%;
+        width: 40%;
+        height: 77vh;
+        border-radius: 0 0 500px 500px;
+    }
+    .container{
+        margin-right: 12%;
+        margin-top: 0;
+    }
+    .article__item{
+        text-align: start;
+    }
+    .article__item--paragraph{
+        max-width: 70%;
+    }
+    .footer{
+        grid-column: 1 / -1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
